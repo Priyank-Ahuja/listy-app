@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0894F156243B9D450068F294 /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0894F155243B9D450068F294 /* ParallaxCell.swift */; };
 		0899C9AD243B801300EA28F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0899C9AC243B801300EA28F1 /* AppDelegate.swift */; };
 		0899C9AF243B801300EA28F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0899C9AE243B801300EA28F1 /* SceneDelegate.swift */; };
 		0899C9B1243B801300EA28F1 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0899C9B0243B801300EA28F1 /* ListTableViewController.swift */; };
 		0899C9B4243B801300EA28F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0899C9B2243B801300EA28F1 /* Main.storyboard */; };
 		0899C9B6243B801400EA28F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0899C9B5243B801400EA28F1 /* Assets.xcassets */; };
 		0899C9B9243B801400EA28F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0899C9B7243B801400EA28F1 /* LaunchScreen.storyboard */; };
+		08EDDB03243BA0C500954FD2 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08EDDB02243BA0C500954FD2 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0894F155243B9D450068F294 /* ParallaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
 		0899C9A9243B801300EA28F1 /* listy-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "listy-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0899C9AC243B801300EA28F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0899C9AE243B801300EA28F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		0899C9B5243B801400EA28F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0899C9B8243B801400EA28F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0899C9BA243B801400EA28F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08EDDB02243BA0C500954FD2 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0894F154243B9CEC0068F294 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0894F155243B9D450068F294 /* ParallaxCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0899C9A0243B801300EA28F1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +68,8 @@
 		0899C9AB243B801300EA28F1 /* listy-app */ = {
 			isa = PBXGroup;
 			children = (
+				08EDDB01243BA0AA00954FD2 /* DataSource */,
+				0894F154243B9CEC0068F294 /* View */,
 				0899C9C0243B80EA00EA28F1 /* Controller */,
 				0899C9AC243B801300EA28F1 /* AppDelegate.swift */,
 				0899C9AE243B801300EA28F1 /* SceneDelegate.swift */,
@@ -73,6 +87,14 @@
 				0899C9B0243B801300EA28F1 /* ListTableViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		08EDDB01243BA0AA00954FD2 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				08EDDB02243BA0C500954FD2 /* DataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +170,9 @@
 			files = (
 				0899C9B1243B801300EA28F1 /* ListTableViewController.swift in Sources */,
 				0899C9AD243B801300EA28F1 /* AppDelegate.swift in Sources */,
+				0894F156243B9D450068F294 /* ParallaxCell.swift in Sources */,
 				0899C9AF243B801300EA28F1 /* SceneDelegate.swift in Sources */,
+				08EDDB03243BA0C500954FD2 /* DataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,13 +248,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -278,12 +303,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -293,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "listy-app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +338,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "listy-app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
